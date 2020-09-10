@@ -12,7 +12,6 @@ body {
   background-color: ghostwhite ;
 }
 .navbar-brand {
-  color: #000000;
   font-weight: 800;
   font-size: 28px;
   line-height: 1;
@@ -21,9 +20,12 @@ body {
   display: block;
   padding: 0.5rem 1rem;
   font-weight: 500;
-  position: relative;  
+  position: relative; 
+  text-align:right;
  }
-
+ ul.navbar-nav {
+  margin-left: auto;
+ }
  .nav-link:hover, .nav-link:focus {
   text-decoration:none; 
   font-weight: 700;
@@ -36,39 +38,52 @@ body {
 
 
 .navbar-light .navbar-nav .nav-link:hover {
-color:green;
+color:whitesmoke;
 }
-/* Top and Bottom borders go out */
-.topBotomBordersOut a:before, .topBotomBordersOut a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background:green;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-    
+@media(max-width: 992px){
+  .nav-link {
+    text-align: center;
+  }
+  .navbar-nav .nav-link:hover{
+    border-bottom-style: solid;
+    color: white;
+
+  }
+
 }
 
-.topBotomBordersOut a:before
-{
-    top: 0px;
-    transform: translateY(10px);
-    
-}
+@media(min-width:993px){
+  /* Top and Bottom borders go out */
+  .topBotomBordersOut a:before, .topBotomBordersOut a:after
+  {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      height: 2px;
+      background:white;
+      content: "";
+      opacity: 0;
+      transition: all 0.3s;
 
-.topBotomBordersOut a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
-}
+  }
 
-.topBotomBordersOut a:hover:before,  .topBotomBordersOut a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
-    
-}
+  .topBotomBordersOut a:before
+  {
+      top: 0px;
+      transform: translateY(10px);
 
+  }
+
+  .topBotomBordersOut a:after
+  {
+      bottom: 0px;
+      transform: translateY(-10px);
+  }
+
+  .topBotomBordersOut a:hover:before,  .topBotomBordersOut a:hover:after
+  {
+      opacity: 1;
+      transform: translateY(0px);
+
+  }
+}
