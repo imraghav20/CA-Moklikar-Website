@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -6,17 +10,24 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #d2e4eb;
+  overflow-x: hidden;
 }
 
 .navbar-light {
   background-color: ghostwhite;
 }
 
-.navbar-brand {
+.navbar-brand{
   font-weight: 800;
   font-size: 28px;
   line-height: 1;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-brand img{
+  height: 28px;
+  width: auto;
 }
 
 .nav-link {
@@ -102,13 +113,13 @@ ul.navbar-nav {
   height: 98vh;
 }
 
-.carousel-item::after{
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.7);
+.carousel-item::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-caption {
@@ -139,24 +150,26 @@ ul.navbar-nav {
   text-decoration: none;
   color: white;
 }
-#about{
+
+#about {
   width: 100vw;
   padding-top: 5vh;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color:#d2e4eb;
-}
-div.intro{
-  padding: 1rem 2rem;
-  text-align:justify;
+  background-color: #d2e4eb;
 }
 
-#about h2{
+div.intro {
+  padding: 1rem 2rem;
+  text-align: justify;
+}
+
+#about h1 {
   font-weight: 600;
-  margin:0 auto;
+  margin: 0 auto;
   padding-bottom: 0.5em;
 }
 
-.testi-image{
+.testi-image {
   height: auto !important;
   width: 100% !important;
   border-radius: 50%;
@@ -165,14 +178,21 @@ div.intro{
   align-self: center;
 }
 
-.img-box{
+#testimonial h1 {
+  font-weight: 600;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.img-box {
   width: fit-content;
   height: fit-content;
   display: block;
   margin: auto;
 }
 
-.testimonial{
+.testimonial {
   text-align: justify;
   padding: 20px;
   font-weight: 400;
@@ -180,16 +200,18 @@ div.intro{
   font-style: italic;
 }
 
-.overview{
+.overview {
   padding: 5px 20px;
   text-align: right;
 }
 
-.fa-angle-right, .fa-angle-left{
+.fa-angle-right,
+.fa-angle-left {
   color: #000000 !important;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
   color: #000000 !important;
 }
 
@@ -200,38 +222,65 @@ div.intro{
   background-image: linear-gradient(to top left, rgb(39, 71, 114), rgb(67, 141, 170), rgb(76, 200, 216));
   background-size: cover;
 }
+
 .wrapper {
-  width: 100%; }
+  width: 100%;
+}
 
 .contact-wrap {
-  background: #fff; }
+  background: #fff;
+  border-radius: 0px 10px 10px 0px;
+}
 
 .info-wrap {
   color: rgba(255, 255, 255, 0.8);
-  background-color: skyblue;
- }
-  .info-wrap h3 {
-    color: #fff; }
-  .info-wrap .dbox {
-    width: 100%;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 25px; }
-    .info-wrap .dbox:last-child {
-      margin-bottom: 0; }
-    .info-wrap .dbox p {
-      margin-bottom: 0; }
-      .info-wrap .dbox p span {
-        font-weight: 500;
-        color: #fff; }
-      .info-wrap .dbox p a {
-        color: #fff; }
-    .info-wrap .dbox .icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 2px solid rgba(255, 255, 255, 0.2); }
-      .info-wrap .dbox .icon span {
-        font-size: 20px;
-        color: #fff; }
-    .info-wrap .dbox .text {
-      width: calc(100% - 50px); }
+  background-color: rgb(39, 71, 114);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.info-wrap h3 {
+  color: #fff;
+}
+
+.info-wrap .dbox {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 25px;
+}
+
+.info-wrap .dbox:last-child {
+  margin-bottom: 0;
+}
+
+.info-wrap .dbox p {
+  margin-bottom: 0;
+}
+
+.info-wrap .dbox p span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.info-wrap .dbox p a {
+  color: #fff;
+}
+
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-wrap .dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+
+.info-wrap .dbox .text {
+  width: calc(100% - 50px);
+}
+
+#contact{
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
