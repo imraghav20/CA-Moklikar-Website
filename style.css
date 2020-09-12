@@ -139,3 +139,48 @@ ul.navbar-nav {
   text-decoration: none;
   color: white;
 }
+
+.testi-image{
+  height: auto !important;
+  width: 100% !important;
+  border-radius: 50%;
+  padding: 0px 20px 20px 20px;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.img-box{
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: auto;
+}
+
+.testimonial{
+  text-align: justify;
+  padding: 20px;
+  font-weight: 400;
+  color: white;
+  font-style: italic;
+}
+
+.overview{
+  padding: 5px 20px;
+  text-align: right;
+}
+
+.fa-angle-right, .fa-angle-left{
+  color: #000000 !important;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  color: #000000 !important;
+}
+
+.card {
+  padding: 5px;
+  border-radius: 10px;
+  border: #041025 solid 2px;
+  background-image: linear-gradient(to top left, rgb(39, 71, 114), rgb(67, 141, 170), rgb(76, 200, 216));
+  background-size: cover;
+}
