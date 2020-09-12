@@ -139,3 +139,19 @@ ul.navbar-nav {
   text-decoration: none;
   color: white;
 }
+#about{
+  width: 100vw;
+  padding-top: 5vh;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:#d2e4eb;
+}
+div.intro{
+  padding: 1rem 2rem;
+  text-align:justify;
+}
+
+#about h2{
+  font-weight: 600;
+  margin:0 auto;
+  padding-bottom: 0.5em;
+}
