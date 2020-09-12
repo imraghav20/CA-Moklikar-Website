@@ -200,3 +200,38 @@ div.intro{
   background-image: linear-gradient(to top left, rgb(39, 71, 114), rgb(67, 141, 170), rgb(76, 200, 216));
   background-size: cover;
 }
+.wrapper {
+  width: 100%; }
+
+.contact-wrap {
+  background: #fff; }
+
+.info-wrap {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: skyblue;
+ }
+  .info-wrap h3 {
+    color: #fff; }
+  .info-wrap .dbox {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px; }
+    .info-wrap .dbox:last-child {
+      margin-bottom: 0; }
+    .info-wrap .dbox p {
+      margin-bottom: 0; }
+      .info-wrap .dbox p span {
+        font-weight: 500;
+        color: #fff; }
+      .info-wrap .dbox p a {
+        color: #fff; }
+    .info-wrap .dbox .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.2); }
+      .info-wrap .dbox .icon span {
+        font-size: 20px;
+        color: #fff; }
+    .info-wrap .dbox .text {
+      width: calc(100% - 50px); }
