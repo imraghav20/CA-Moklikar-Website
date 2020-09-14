@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -18,14 +18,14 @@ body {
   background-color: ghostwhite;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-weight: 800;
   font-size: 28px;
   line-height: 1;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   height: 28px;
   width: auto;
 }
@@ -281,25 +281,32 @@ div.intro {
   width: calc(100% - 50px);
 }
 
-#contact{
+#contact {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
   a.navbar-brand {
     font-size: 18px;
   }
-      }
-@media(max-width: 330px){
+}
+
+@media(max-width: 330px) {
   a.navbar-brand {
     font-size: 0.9em;
   }
-      }
-@media(max-width: 768px){
-   .contact-wrap{
-    border-radius:10px 10px 0 0; 
+}
+
+@media(max-width: 768px) {
+  .contact-wrap {
+    border-radius: 10px 10px 0 0;
   }
-   .info-wrap{
-    border-radius:0 0 10px 10px; 
+
+  .info-wrap {
+    border-radius: 0 0 10px 10px;
   }
+}
+
+.justify-content-center{
+  margin: 0px !important;
 }
