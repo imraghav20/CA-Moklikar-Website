@@ -295,11 +295,11 @@ div.intro {
     font-size: 0.9em;
   }
       }
-@media(max-width: 425px){
+@media(max-width: 768px){
    .contact-wrap{
-    border-radius:10px; 
+    border-radius:10px 10px 0 0; 
   }
    .info-wrap{
-    border-radius:10px; 
+    border-radius:0 0 10px 10px; 
   }
 }
