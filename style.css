@@ -54,6 +54,20 @@ ul.navbar-nav {
   cursor: default;
 }
 
+.nav-testi2{
+  display: none;
+}
+
+@media(max-width: 768px){
+  .nav-testi1{
+    display: none !important;
+  }
+
+  .nav-testi2{
+    display: block !important;
+  }
+}
+
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: whitesmoke;
@@ -309,4 +323,20 @@ div.intro {
 
 .justify-content-center{
   margin: 0px !important;
+}
+
+@media(max-width: 768px){
+  #testimonial1 {
+    height: 0 !important;
+    overflow: hidden;
+  }
+
+  #testimonial2 {
+    height: fit-content !important;
+  }
+}
+
+#testimonial2 {
+  height: 0;
+  overflow: hidden;
 }
