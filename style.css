@@ -292,6 +292,6 @@ div.intro {
       }
 @media(max-width: 330px){
   a.navbar-brand {
-    font-size: 1em;
+    font-size: 0.9em;
   }
       }
