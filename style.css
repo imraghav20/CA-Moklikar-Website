@@ -284,3 +284,14 @@ div.intro {
 #contact{
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
+
+@media(max-width: 768px){
+  a.navbar-brand {
+    font-size: 18px;
+  }
+      }
+@media(max-width: 330px){
+  a.navbar-brand {
+    font-size: 0.9em;
+  }
+      }
