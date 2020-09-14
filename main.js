@@ -24,3 +24,9 @@ $(window).scroll(function () {
         .parent().removeClass("active")
         .end().filter("[href='#" + id + "']").parent().addClass("active");
 })
+
+function closeMenu() {
+    $(".navbar-collapse").removeClass("show");
+    $(".navbar-toggler").attr("aria-expanded", "false");
+    $(".navbar-toggler").addClass("collapsed");
+}
