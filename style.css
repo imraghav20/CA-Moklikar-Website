@@ -58,7 +58,7 @@ ul.navbar-nav {
   display: none;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
   .nav-testi1{
     display: none !important;
   }
@@ -311,7 +311,7 @@ div.intro {
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
   .contact-wrap {
     border-radius: 10px 10px 0 0;
   }
@@ -325,7 +325,7 @@ div.intro {
   margin: 0px !important;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
   #testimonial1 {
     height: 0 !important;
     overflow: hidden;
