@@ -29,8 +29,10 @@
         <li class="nav-item active" onclick="closeMenu()"><a href="#home" class="nav-link ">HOME</a></li>
         <li class="nav-item" onclick="closeMenu()"><a href="#about" class="nav-link">ABOUT</a></li>
         <li class="nav-item" onclick="closeMenu()"><a href="#services" class="nav-link">OUR SERVICES</a></li>
-        <li class="nav-item" onclick="closeMenu()"><a href="#testimonial1" class="nav-link nav-testi1">TESTIMONIALS</a></li>
-        <li class="nav-item" onclick="closeMenu()"><a href="#testimonial2" class="nav-link nav-testi2">TESTIMONIALS</a></li>
+        <li class="nav-item" onclick="closeMenu()"><a href="#testimonial1" class="nav-link nav-testi1">TESTIMONIALS</a>
+        </li>
+        <li class="nav-item" onclick="closeMenu()"><a href="#testimonial2" class="nav-link nav-testi2">TESTIMONIALS</a>
+        </li>
         <li class="nav-item" onclick="closeMenu()"><a href="#contact" class="nav-link">CONTACT</a></li>
       </ul>
     </div>
@@ -38,10 +40,10 @@
   <div id="home">
     <div id="mycarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#mycarousel" data-slide-to="1"></li>
-          <li data-target="#mycarousel" data-slide-to="2"></li>
-      </ol> 
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active ">
           <img class="d-block w-100" src="images/car1.jpg" alt="First slide">
@@ -73,7 +75,7 @@
             <p><a href="#contact" class="btn-white">Connect with us</a></p>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -408,35 +410,41 @@
             <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch ">
               <div class="contact-wrap w-100 p-md-5 p-4">
                 <h3 class="mb-4">Contact Us</h3>
-                <div id="form-message-warning" class="mb-4"></div>
-                <div id="form-message-success" class="mb-4">
-                  Your message was sent, Thank You!
-                </div>
-                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                <script>
+                  var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                  onload="if(submitted) {window.location='https://imraghav20.github.io/CA-Moklikar-Website/#contact'; document.getElementById('contactForm').reset();}"></iframe>
+                <form method="POST" id="contactForm" name="contactForm" class="contactForm" target="hidden_iframe"
+                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcMYt9Vul1L60ZHwkz6bV2yhSXRYK1vOUrCg7hekHc5QPXSg/formResponse"
+                  onsubmit="submitted=true; alert('Your message has been sent. Thank you!');">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label class="label" for="name">Full Name</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        <input type="text" class="form-control" name="entry.122091424" id="name" placeholder="Name"
+                          required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label class="label" for="email">Email Address</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        <input type="email" class="form-control" name="entry.833571593" id="email" placeholder="Email"
+                          required>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="label" for="subject">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                        <input type="text" class="form-control" name="entry.841696614" id="subject"
+                          placeholder="Subject" required>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label class="label" for="#">Message</label>
-                        <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                          placeholder="Message"></textarea>
+                        <label class="label" for="message">Message</label>
+                        <textarea name="entry.2062514281" class="form-control" id="message" cols="30" rows="4"
+                          placeholder="Message" required></textarea>
                       </div>
                     </div>
                     <div class="col-md-12">
