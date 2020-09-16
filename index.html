@@ -614,60 +614,104 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- hidden contact form -->
+    <!-- hidden contact form -->
 
-  <div id="hiddenContact" class="card contact-card">
-    <div class="hidden-contact-wrap">
-      <h3 class="mb-2">Contact Us</h3>
-      <script>
-        var submitted = false;
-      </script>
-      <iframe name="hidden_contact_iframe" id="hidden_contact_iframe" style="display:none;"
-        onload="if(submitted) {window.location='https://imraghav20.github.io/CA-Moklikar-Website/'; document.getElementById('hiddenContactForm').reset();}"></iframe>
-      <form method="POST" id="hiddenContactForm" name="contactForm" class="contactForm" target="hidden_contact_iframe"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcMYt9Vul1L60ZHwkz6bV2yhSXRYK1vOUrCg7hekHc5QPXSg/formResponse"
-        onsubmit="submitted=true; alert('Your message has been sent. Thank you!');">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label class="label" for="name">Full Name</label>
-              <input type="text" class="form-control" name="entry.122091424" id="name" placeholder="Name" required>
+    <div id="hiddenContact" class="card contact-card">
+      <div class="hidden-contact-wrap">
+        <h3 class="mb-2">Contact Us</h3>
+        <script>
+          var submitted = false;
+        </script>
+        <iframe name="hidden_contact_iframe" id="hidden_contact_iframe" style="display:none;"
+          onload="if(submitted) {window.location='https://imraghav20.github.io/CA-Moklikar-Website/'; document.getElementById('hiddenContactForm').reset();}"></iframe>
+        <form method="POST" id="hiddenContactForm" name="contactForm" class="contactForm" target="hidden_contact_iframe"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcMYt9Vul1L60ZHwkz6bV2yhSXRYK1vOUrCg7hekHc5QPXSg/formResponse"
+          onsubmit="submitted=true; alert('Your message has been sent. Thank you!');">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="label" for="name">Full Name</label>
+                <input type="text" class="form-control" name="entry.122091424" id="name" placeholder="Name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="label" for="email">Email Address</label>
+                <input type="email" class="form-control" name="entry.833571593" id="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="label" for="subject">Subject</label>
+                <input type="text" class="form-control" name="entry.841696614" id="subject" placeholder="Subject"
+                  required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="label" for="message">Message</label>
+                <textarea name="entry.2062514281" class="form-control" id="message" cols="30" rows="4"
+                  placeholder="Message" required></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-success float-right">
+                <div class="submitting"></div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label class="label" for="email">Email Address</label>
-              <input type="email" class="form-control" name="entry.833571593" id="email" placeholder="Email" required>
+        </form>
+      </div>
+    </div>
+    <button onclick="showForm()" id="contactFormBtn"><i class="far fa-envelope fa-2x"></i></button>
+    <button onclick="closeForm()" id="contactFormCloseBtn"><i class="fas fa-times fa-2x"></i></button>
+
+    <!--footer-->
+    <footer class="font-small page-footer bg-custom1">
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm">
+
+              <h5 id="footer-contact" class="text-uppercase h5-responsive font-weight-bold">Contact Us At</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a class="links" href="mailto:caswatim&associate@gmail.com">caswatim&associate@gmail.com</a>
+                </li>
+                <li>
+                  <a class="links" href="tel://+91 9819426930">+91 9819426930</a>
+                </li>
+              </ul>
+
             </div>
-          </div>
-          <div class="col-md-12">
-            <div class="form-group">
-              <label class="label" for="subject">Subject</label>
-              <input type="text" class="form-control" name="entry.841696614" id="subject" placeholder="Subject"
-                required>
+            <div class="col-sm">
+              <div class="logo-container mt-5">
+                <img src="images/logo.jpeg" width=100% height=100%>
+              </div>
             </div>
-          </div>
-          <div class="col-md-12">
-            <div class="form-group">
-              <label class="label" for="message">Message</label>
-              <textarea name="entry.2062514281" class="form-control" id="message" cols="30" rows="4"
-                placeholder="Message" required></textarea>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="form-group">
-              <input type="submit" value="Send Message" class="btn btn-success float-right">
-              <div class="submitting"></div>
+            <div class="col-sm">
+              <div class="iitj">
+                <h5 class="h5-responsive text-uppercase font-weight-bold">Swati M and Associates</h5>
+                <p>102, Indraneel CHS, Plot No 24A,<br> Sector 12 Near Pranam Hotel,
+                  Kharghar,<br>Navi Mumbai, India–410210</p>
+              </div>
             </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        Copyright © 2020. All rights reserved. <strong>Disclaimer & Privacy Policy</strong>
+        <br>
+        This website is made considering the guidelines issued by the Institute of Chartered Accountants of
+        India.
+        <br>
+        Last Updated on : 19-10-18
+      </div>
+    </footer>
   </div>
-  <button onclick="showForm()" id="contactFormBtn"><i class="far fa-envelope fa-2x"></i></button>
-  <button onclick="closeForm()" id="contactFormCloseBtn"><i class="fas fa-times fa-2x"></i></button>
 
 
   <!-- Optional JavaScript -->

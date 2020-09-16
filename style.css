@@ -441,3 +441,67 @@ div.serv {
   display: none;
   transition: 200ms;
 }
+
+.links:hover {
+  color: #F7D9EB !important;
+}
+
+.links {
+  color: white;
+}
+
+.text-uppercase {
+  margin-top: 4%;
+  padding-top: 15%;
+}
+
+.bg-custom1 {
+  background-color: #212529 !important;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+  .container-fluid h5{
+      text-align: center;
+  }
+
+  .container-fluid p{
+    text-align: center;
+  }
+
+  .container-fluid ul{
+    text-align: center;
+  }
+}
+
+@media (min-width:600px) {
+
+  .container-fluid h5{
+      text-align: right;
+  }
+
+  #footer-contact{
+    text-align: left;
+  }
+
+  .container-fluid p{
+    text-align: right;
+  }
+}
+
+footer .logo-container {
+  display: block;
+  height: auto;
+  width: 50%;
+  margin-left: 25%;
+}
+
+footer {
+  position: relative;
+  z-index: 999;
+}
+
+footer {
+  color: white;
+}
