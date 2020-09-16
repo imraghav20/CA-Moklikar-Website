@@ -1,3 +1,15 @@
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+      document.querySelector("#websitebody").style.display = "none";
+      document.querySelector("#preloader").style.display = "block";
+      
+  }
+  else {
+    document.querySelector("#websitebody").style.display = "block";
+    document.querySelector("#preloader").style.display = "none";
+}
+}
+
 var topMenu = $("#top-menu"),
     topMenuHeight = topMenu.outerHeight() + 15,
 
