@@ -366,6 +366,9 @@ div.intro {
 
 div.serv {
   position: relative;
+  height: 530px;
+  display: flex;
+  align-items: center;
 }
 
 .overlay {
@@ -527,4 +530,7 @@ footer {
 
 footer {
   color: white;
+}
+.servlist{
+
 }
